@@ -183,7 +183,7 @@ body {
 }
 
 .activeNavbar {
-    background: linear-gradient(-45deg, rgba(88, 68, 3, 0.089) 0, #ffd9006c 70%) !important;
+    background: linear-gradient(-45deg, rgba(88, 68, 3, 0.089) 0, #FBB117 70%) !important;
 }
 
 @media (max-width: 768px) {
@@ -289,18 +289,12 @@ body {
     align-items: center;
 }
 
-.menu-item::before {
+.menu-item span {
     content: "▼";
     font-size: 10px;
     margin-right: 10px;
     color: #ffffff;
 }
-
-.menu-item.active {
-    background-color: #5c5c5c;
-    border-right: none;
-}
-
 
 .content {
     flex-grow: 1;

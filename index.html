@@ -40,18 +40,18 @@
 
     <div class="container">
         <div class="sidebar">
-            <div onclick="tapertek()" class="menu-item active">Tápérték adatok</div>
-            <div class="menu-item">Elérhető kiszerelések</div>
+            <div id="tapertek" onclick="tapertek()" class="menu-item active"><span id="nyil1">▼</span>Tápérték adatok</div>
+            <div id="kiszereles" onclick="kiszereles()" class="menu-item"><span id="nyil2">▼</span>Elérhető kiszerelések</div>
         </div>
 
-        <div id="content" class="content">
+        <div id="content" class="content"></div>
+    </div>
 
+    <script>
+    tapertek();
 
-
-            <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
-
-
-            <h3>Elérhető kiszerelések</h3>
+        function kiszereles() {
+            const menuItems = ` <h3>Elérhető kiszerelések</h3>
             <div class="packaging-grid">
                 <div>
                     <li class="packaging-item">0,5l üveg</li>
@@ -71,14 +71,27 @@
                     <br>
                     <li class="packaging-item">30 l hordó</li>
                 </div>
-            </div>
-        </div>
-    </div>
+            </div>`;
+            
+            document.getElementById("content").innerHTML = menuItems;
+            document.getElementById("kiszereles").style.backgroundColor  = "#5c5c5c";
+            document.getElementById("kiszereles").style.borderRight = "0px";
 
-    <script>
-  function tapertek() {
-    // Idézőjel (") helyett backtick (`) használata
-    const menuItems = `
+            document.getElementById("tapertek").style.backgroundColor = "#5c5c5c00";
+            document.getElementById("tapertek").style.borderRight = "1px solid #ddd";
+
+            document.getElementById("nyil2").style.transform = "rotate(-90deg)";
+            document.getElementById("nyil2").style.color = "#FBB117";
+            
+            document.getElementById("nyil1").style.color = "#ffffff"
+            document.getElementById("nyil1").style.transform = "rotate(0deg)";
+            
+
+        }
+
+        function tapertek() {
+
+            const menuItems = `
         <h3>Tápérték 100 ml termékben</h3>
         <p class="">* Referencia beviteli érték egy átlagos felnőtt számára (8400 kJ/2000 kcal)</p>
         <table>
@@ -109,9 +122,20 @@
         </table>
     `;
 
-     document.getElementById("content").innerHTML = menuItems;
+            document.getElementById("content").innerHTML = menuItems;
+            document.getElementById("tapertek").style.backgroundColor = "#5c5c5c";
+            document.getElementById("tapertek").style.borderRight = "0px";
 
-}
+            document.getElementById("kiszereles").style.backgroundColor = "#5c5c5c00";
+            document.getElementById("kiszereles").style.borderRight = "1px solid #ddd";
+
+            document.getElementById("nyil1").style.transform = "rotate(-90deg)";
+            document.getElementById("nyil1").style.color = "#FBB117";
+            
+            document.getElementById("nyil2").style.color = "#ffffff"
+            document.getElementById("nyil2").style.transform = "rotate(0deg)";
+
+        }
 
 
 
