@@ -53,6 +53,44 @@ body {
 }
 
 
+
+
+@media (min-width: 1200px) {
+    .sor-kep {
+
+
+        float: right;
+        margin-right: 10%;
+    }
+    .title-box {
+    
+        height: 550px;
+     
+    
+    
+    }
+
+    .title-box-gradiant {
+        width: 100%;
+        height: 550px;
+        background: rgba(18, 18, 18, 0.822);
+        background: linear-gradient(90deg,rgba(18, 18, 18, 0.849)30%, rgba(112, 111, 63, 0) 100%);
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    .title {
+        font-family: "Playwrite NZ Basic", cursive;
+        font-size: 50px;
+        margin-left: 10%;
+        margin-bottom: 0px;
+        text-shadow: 0px 0px 15px black;
+    }
+}
+
+
 @media (max-width: 1200px) {
     .sor-kep {
 
@@ -63,6 +101,15 @@ body {
         margin-left: auto;
         float: none;
     }
+
+    .title {
+        font-family: "Playwrite NZ Basic", cursive;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 0px;
+        text-shadow: 0px 0px 15px black;
+    }
+    
 }
 
 @media (max-width: 520px) {
@@ -92,17 +139,9 @@ body {
 
 
 
-.title {
-    font-family: "Playwrite NZ Basic", cursive;
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 0px;
-    text-shadow: 0px 0px 15px black;
-}
-
 .navbar {
     width: 100%;
-    height: 40px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -271,6 +310,7 @@ body {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    height: 250px
 }
 
 
@@ -307,6 +347,10 @@ h3 {
     margin-top: 0;
     color: #ffffff;
     font-size: 16px;
+    text-decoration: underline;
+    text-decoration-color: #FBB117;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
 }
 
 .note {
