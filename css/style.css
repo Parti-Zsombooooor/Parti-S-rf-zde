@@ -55,19 +55,30 @@ body {
 
 
 
+
 @media (min-width: 1200px) {
     .sor-kep {
 
 
         float: right;
         margin-right: 10%;
+     
     }
     .title-box {
     
         height: 550px;
-     
+        
     
     
+    }
+
+    .tiltle-p{
+        font-size: 20px;
+        color: rgb(204, 204, 204);
+        width: 300px;
+        margin-left: 10%;
+        padding-left: 15px;
+        margin-top: 0px;
     }
 
     .title-box-gradiant {
@@ -80,6 +91,7 @@ body {
         top: 0;
         left: 0;
         overflow: hidden;
+        
     }
     .title {
         font-family: "Playwrite NZ Basic", cursive;
@@ -87,6 +99,30 @@ body {
         margin-left: 10%;
         margin-bottom: 0px;
         text-shadow: 0px 0px 15px black;
+        margin-top: 150px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .tiltle-container{
+        width: 50%;
+        height: 100%;
+    
+    }
+
+    .img-container{
+        width: 50%;
+        height: 100%;
+        padding-top: 150px;
+    }
+
+    .tiltle-content{
+        display: flex;
+        width: 70%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 }
 
@@ -100,6 +136,9 @@ body {
         margin-right: auto;
         margin-left: auto;
         float: none;
+
+
+
     }
 
     .title {
@@ -109,6 +148,36 @@ body {
         margin-bottom: 0px;
         text-shadow: 0px 0px 15px black;
     }
+    .tiltle-p{
+        display: none;
+    }
+
+    .tiltle-container{
+        width: fit-content;
+        height: fit-content;
+      
+    }
+
+    .img-container{
+        width: 100%;
+        height: fit-content;
+      
+     
+
+    }
+
+    .tiltle-content{
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    
+    
     
 }
 
@@ -303,6 +372,8 @@ body {
 
 
 
+
+
 .container {
     display: flex;
     border: 1px solid #ddd;
@@ -310,12 +381,14 @@ body {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    height: 250px
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 
 .sidebar {
-    width: 250px;
+    width: 210px;
     flex-shrink: 0;
 }
 
