@@ -1,3 +1,27 @@
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #252525;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #919191;
+    border-radius: 100px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d1d1d1;
+}
+
+
+
+
 /* #121212
 
 #E0E0E0
@@ -30,7 +54,7 @@ body {
 .title-box-gradiant {
     width: 100%;
     height: 500px;
-    background: linear-gradient(rgba(18, 18, 18, 0), rgba(18, 18, 18, 0.616));
+    background: linear-gradient(rgba(18, 18, 18, 0), rgb(18, 18, 18));
     z-index: 2;
     position: absolute;
     top: 0;
@@ -62,17 +86,18 @@ body {
 
         float: right;
         margin-right: 10%;
-     
-    }
-    .title-box {
-    
-        height: 550px;
-        
-    
-    
+
     }
 
-    .tiltle-p{
+    .title-box {
+
+        height: 550px;
+
+
+
+    }
+
+    .tiltle-p {
         font-size: 20px;
         color: rgb(204, 204, 204);
         width: 300px;
@@ -85,14 +110,15 @@ body {
         width: 100%;
         height: 550px;
         background: rgba(18, 18, 18, 0.822);
-        background: linear-gradient(90deg,rgba(18, 18, 18, 0.849)30%, rgba(112, 111, 63, 0) 100%);
+        background: linear-gradient(90deg, rgba(18, 18, 18, 0.849)30%, rgba(112, 111, 63, 0) 100%);
         z-index: 2;
         position: absolute;
         top: 0;
         left: 0;
         overflow: hidden;
-        
+
     }
+
     .title {
         font-family: "Playwrite NZ Basic", cursive;
         font-size: 50px;
@@ -104,19 +130,19 @@ body {
         font-weight: bold;
     }
 
-    .tiltle-container{
+    .tiltle-container {
         width: 50%;
         height: 100%;
-    
+
     }
 
-    .img-container{
+    .img-container {
         width: 50%;
         height: 100%;
         padding-top: 150px;
     }
 
-    .tiltle-content{
+    .tiltle-content {
         display: flex;
         width: 70%;
         height: 100%;
@@ -125,7 +151,7 @@ body {
 
     }
 
-    .tiltle-button{
+    .tiltle-button {
         border-radius: 100px;
         background-color: #FBB117;
         padding: 10px 25px;
@@ -136,23 +162,24 @@ body {
         margin-top: 30px;
         text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.425);
         transition: all 0.3s ease;
-        
+
     }
 
-    .tiltle-button:hover{
+    .tiltle-button:hover {
         background-color: #9b701367;
         padding: 10px 35px;
         text-shadow: 0px 0px 5px rgb(255, 255, 255);
-        
+
     }
 }
 
 
 @media (max-width: 1200px) {
 
-    .tiltle-button{
+    .tiltle-button {
         display: none;
     }
+
     .sor-kep {
 
 
@@ -173,37 +200,48 @@ body {
         margin-bottom: 0px;
         text-shadow: 0px 0px 15px black;
     }
-    .tiltle-p{
-        display: none;
-    }
 
-    .tiltle-container{
-        width: fit-content;
-        height: fit-content;
-      
-    }
-
-    .img-container{
-        width: 100%;
-        height: fit-content;
-      
-     
-
-    }
-
-    .tiltle-content{
-        display: block;
-        width: fit-content;
-        height: fit-content;
+    .tiltle-p {
         
+        text-shadow: 0px 0px 10px black;    
+
+
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        width: 300px;
+        font-weight: bold;
         margin-left: auto;
         margin-right: auto;
     }
-    
-    
- 
-    
-    
+
+    .tiltle-container {
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .img-container {
+        width: 100%;
+        height: fit-content;
+
+
+
+    }
+
+    .tiltle-content {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+
+
+
+
 }
 
 @media (max-width: 520px) {
