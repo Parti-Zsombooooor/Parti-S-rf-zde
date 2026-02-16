@@ -256,6 +256,9 @@ body {
         margin-left: auto;
         float: none;
     }
+
+    
+
 }
 
 @media (max-width: 275px) {
@@ -303,7 +306,13 @@ body {
 
 }
 
-
+.navbar img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-right: 10px;
+}
 
 
 .navbar-holder {
@@ -391,6 +400,10 @@ body {
         display: none;
     }
 
+    .content{
+        transform: scale(80vw) !important;
+    }
+
 
     .navbar.open {
         display: flex;
@@ -428,6 +441,7 @@ body {
     .nav-toggle.open .hamburgericon {
         transform: rotate(180deg);
     }
+
 
 
 }
@@ -539,21 +553,30 @@ tr:last-child td {
 @media (max-width: 950px) {
     .container{
         display: flex;
-        height: 500px;
+        height: 330px;
         flex-direction: column;
         align-items: center;
+        margin: 10px;
     }
 
     .content{
         border: none;
         border-top: 1px solid #ddd;
+        transform: scale(0.9);
     }
 
     .sidebar{
         display: flex;
+        justify-content: center;
+      
     }
 
     .menu-item{
-        
+        min-width: 150px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    #tapertek{
+        border-left: 1px solid white !important; 
     }
 }
