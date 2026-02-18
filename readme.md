@@ -2,7 +2,7 @@
 
 Ez a projekt a fiktív **Parti Sörfőzde** centenáriumi weboldalának terve és megvalósítása. A projekt célja egy olyan márkaidentitás és webes felület létrehozása volt, amely elmeséli a főzde kalandos, 100 éves történetét a II. világháborús bombatalálattól a modern újjászületésig.
 
-<img src="imgs/faviconlogo.png" alt="Parti Sörfőzde Logo" width="400">
+<img src="imgs/faviconlogo.png" alt="Parti Sörfőzde Logo" width="400" style="margin-left: auto; margin-right: auto; display: block;">
 
 ## 📖 A Koncepció (Lore)
 
@@ -44,13 +44,13 @@ A weboldal **egyetlen HTML fájlból áll (Single Page)**, a tartalom logikailag
 ## 📸 Képernyőképek (Screenshots)
 
 ### A "Bomba" sztori
-<img src="imgs/bomba.png" alt="Bomba a sörfőzdében" width="150">
+<img src="imgs/bomba.png" alt="Bomba a sörfőzdében" width="250">
 
 ### A 100 éves évforduló (1926-os nyitás)
-<img src="imgs/nyito.png" alt="Grand Opening 1926" width="150">
+<img src="imgs/nyito.png" alt="Grand Opening 1926" width="250">
 
 ### Modern belső tér (2026)
-<img src="imgs/modern.png" alt="Modern Interior" width="150">
+<img src="imgs/modern.png" alt="Modern Interior" width="250">
 
 ## 🚀 Telepítés és Futtatás
 
