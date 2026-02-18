@@ -2,7 +2,7 @@
 
 Ez a projekt a fiktív **Parti Sörfőzde** centenáriumi weboldalának terve és megvalósítása. A projekt célja egy olyan márkaidentitás és webes felület létrehozása volt, amely elmeséli a főzde kalandos, 100 éves történetét a II. világháborús bombatalálattól a modern újjászületésig.
 
-![Parti Sörfőzde Logo](imgs/faviconlogo.png)
+<img src="imgs/faviconlogo.png" alt="Parti Sörfőzde Logo" width="400">
 
 ## 📖 A Koncepció (Lore)
 
@@ -31,7 +31,7 @@ A weboldal teljesen egyedi fejlesztés, külső keretrendszerek (frameworkök) n
     * Flexbox és Grid layout használata
     * Teljesen reszponzív (mobilbarát) kialakítás
 * **Szkriptek:** Vanilla JavaScript (DOM manipuláció, interakciók)
-* **Design:** AI generált vizuális elemek (Gemini), Figma tervek
+* **Design:** AI generált vizuális elemek (Gemini), Jira tervek
 
 ## 📂 A Projekt Felépítése
 
@@ -44,13 +44,13 @@ A weboldal **egyetlen HTML fájlból áll (Single Page)**, a tartalom logikailag
 ## 📸 Képernyőképek (Screenshots)
 
 ### A "Bomba" sztori
-![Bomba a sörfőzdében](./assets/bomba_old.png)
+<img src="imgs/bomba.png" alt="Bomba a sörfőzdében" width="150">
 
 ### A 100 éves évforduló (1926-os nyitás)
-![Grand Opening 1926](./assets/grand_opening.png)
+<img src="imgs/nyito.png" alt="Grand Opening 1926" width="150">
 
 ### Modern belső tér (2026)
-![Modern Interior](./assets/modern_brewery.png)
+<img src="imgs/modern.png" alt="Modern Interior" width="150">
 
 ## 🚀 Telepítés és Futtatás
 
@@ -65,7 +65,7 @@ Mivel az oldal teljesen statikus, nincs szükség bonyolult telepítésre vagy b
 
 ## 👤 Szerző
 
-* **[A Te Neved]** - *Design és Fejlesztés*
+* **Parti Zsombor** - *Design és Fejlesztés*
 
 ---
 *Ez egy hobbi/portfólió projekt, a Parti Sörfőzde egy kitalált márka.*
