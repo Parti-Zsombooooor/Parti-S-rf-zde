@@ -2,7 +2,7 @@
 
 Ez a projekt a fiktív **Parti Sörfőzde** centenáriumi weboldalának terve és megvalósítása. A projekt célja egy olyan márkaidentitás és webes felület létrehozása volt, amely elmeséli a főzde kalandos, 100 éves történetét a II. világháborús bombatalálattól a modern újjászületésig.
 
-<img src="imgs/faviconlogo.png" alt="Parti Sörfőzde Logo" width="400" style="margin-left: auto; margin-right: auto; display: block;">
+<img src="imgs/faviconlogo.png" alt="Parti Sörfőzde Logo" width="400">
 
 ## 📖 A Koncepció (Lore)
 
