@@ -6,7 +6,7 @@
     --first-color: #1b1b1b;
     --second-color: #1b1b1b;
     --third-color: #1b1b1b;
-    --accent-color: #FF5151;
+    --accent-color: #fbb317;
     --dark-color: #161616;
 }
 
@@ -136,7 +136,7 @@ article:nth-child(4) {
 
 .card__icon {
     font-size: 1.5rem;
-    color: var(--dark-color);
+    color: white;
 }
 
 .card__icon:hover {
@@ -169,7 +169,7 @@ article:nth-child(4) {
 
 /*Move left*/
 .card:hover {
-    box-shadow: 0 .5rem 1rem #D1D9E6;
+    box-shadow: 0 .3rem 2rem #fbb31736;
 }
 
 .card:hover .card__name {
@@ -203,4 +203,15 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+
+.terekfooter{
+    margin-top: 250px;
+}
+@media screen and (max-width: 1055px) {
+    .terekfooter{
+        margin-top:0px;
+    }
+
 }

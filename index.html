@@ -1,222 +1,214 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parti Sörfőzde</title>
-   
-    <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parti Sörfőzde</title>
 
-  <body>
-    <div class="title-box">
-      <div class="title-box-gradiant">
-        <div class="navbar-holder">
-          <nav class="navbar noselect">
-            <a class="activeNavbar">Főoldal</a>
-            <a href="#rolunk">Rólunk</a>
-            <a href="termeklap.html">Terméklap</a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="50px"
-                viewBox="0 -960 960 960"
-                width="50px"
-                class="hamburgericon"
-                fill="white"
-              >
-                <path
-                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-                />
-              </svg>
-            </button>
-          </nav>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="title-box">
+    <div class="title-box-gradiant">
+      <div class="navbar-holder">
+        <nav class="navbar noselect">
+          <a class="activeNavbar">Főoldal</a>
+          <a href="#rolunk">Rólunk</a>
+          <a href="termeklap.html">Terméklap</a>
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px"
+              class="hamburgericon" fill="white">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+          </button>
+        </nav>
+      </div>
+
+      <div class="tiltle-content">
+        <div class="tiltle-container">
+          <h1 class="title">Parti Sörfőzde</h1>
+          <p class="tiltle-p">
+            1926 ÓTA Családi hagyomány és minőség minden kortyban!
+          </p>
+          <button class="tiltle-button"><a href="termeklap.html" style="text-decoration: none; color: white;">Terméklap</a></button>
         </div>
-
-        <div class="tiltle-content">
-          <div class="tiltle-container">
-            <h1 class="title">Parti Sörfőzde</h1>
-            <p class="tiltle-p">
-              1926 ÓTA Családi hagyomány és minőség minden kortyban!
-            </p>
-            <button class="tiltle-button">Terméklap</button>
-          </div>
-          <div class="img-container">
-            <img class="sor-kep" src="imgs/sor.png" alt="" />
-          </div>
+        <div class="img-container">
+          <img class="sor-kep" src="imgs/sor.png" alt="" />
         </div>
       </div>
     </div>
+  </div>
 
-    <section class="beer-intro">
-      <div class="beer-intro-inner">
-        <div class="beer-text">
-          <h2 class="beer-title">Parti Sör</h2>
-          <p class="beer-desc">
-            Ebben a palackban 100 év családi hagyománya és a tiszta, aranysárga
-            komló találkozik. Felejtsd el a kapkodást: mi türelemmel és szívvel
-            főzzük, hogy minden kortyban érezd a valódi, kézműves minőséget.
+  <section class="beer-intro">
+    <div class="beer-intro-inner">
+      <div class="beer-text">
+        <h2 class="beer-title">Parti Sör</h2>
+        <p class="beer-desc">
+          Ebben a palackban 100 év családi hagyománya és a tiszta, aranysárga
+          komló találkozik. Felejtsd el a kapkodást: mi türelemmel és szívvel
+          főzzük, hogy minden kortyban érezd a valódi, kézműves minőséget.
+        </p>
+      </div>
+
+      <div class="beer-image">
+        <img src="imgs/termeksor.png" alt="Sör" />
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="sidebar">
+      <div id="tapertek" onclick="tapertek()" class="menu-item active">
+        <span id="nyil1">▼</span>Tápérték adatok
+      </div>
+      <div id="kiszereles" onclick="kiszereles()" class="menu-item">
+        <span id="nyil2">▼</span>Elérhető kiszerelések
+      </div>
+    </div>
+
+    <div id="content" class="content"></div>
+  </div>
+
+  <section class="stats-container">
+    <div class="stats-wrapper">
+      <div class="stat-item">
+        <div class="badge-container">
+          <span class="badge">SZÁMOKBAN</span>
+        </div>
+        <div class="stat-number">800+</div>
+        <div class="stat-label">elégedett viszonteladó</div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-number">20+</div>
+        <div class="stat-label">sörtermék</div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-number">186.000</div>
+        <div class="stat-label">főzött sör hl/év</div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-number">4</div>
+        <div class="stat-label">Parti Sör Márkabolt</div>
+      </div>
+    </div>
+  </section>
+
+  <h1 id="rolunk" class="beer-title rolunk-text">Rólunk</h1>
+  <h3 class="rolunk-altext">
+    Családi vállalkozásunk idén ünnepli fennállásának 100. évfordulóját. A
+    sörfőzdét nagyapánk alapította, és jelenleg mi, az unokák vezetjük az
+    üzemet, tiszteletben tartva az eredeti receptúrákat és a hely történelmét.
+  </h3>
+  <section class="story-section">
+    <div class="story-container">
+      <div class="story-dark">
+        <div class="story-row">
+          <div class="story-image">
+            <img src="imgs/nyito.png" alt="A sörfőzde kezdetei" />
+          </div>
+          <div class="story-text">
+            <h3>Az alapítás – 1926</h3>
+            <p>
+              A sörfőzde építését az 1920-as évek elején kezdték meg, a
+              hivatalos átadásra pedig 1926-ban került sor. Az üzemcsarnok
+              falán ma is látható az eredeti fotó a megnyitóról, ahol
+              nagyapánk és az alapító csapat átvágta a zöld szalagot,
+              elindítva ezzel a termelést. A "Parti Sörfőzde" név már ekkor
+              összeforrt a minőségi sörfőzéssel a környéken.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-row">
+        <div class="story-image">
+          <img src="imgs/bomba.png" alt="A technológiai fejlődés" />
+        </div>
+        <div class="story-text">
+          <h3>A háborús évek – 1944</h3>
+          <p>
+            A sörfőzde működése az első két évtizedben zavartalan volt,
+            azonban a második világháború eseményei közvetlenül érintették az
+            üzemet. 1944-ben, egy légitámadás során találat érte a főépületet.
+            Egy bomba átszakította a tetőszerkezetet, és a főzőház közepén,
+            közvetlenül az üstök mellett fúródott a földbe. Szerencsés
+            véletlen folytán a szerkezet nem robbant fel. A tűzszerészek
+            később hatástalanították és elszállították az eszközt, így a
+            berendezések épségben maradtak.
           </p>
         </div>
-
-        <div class="beer-image">
-          <img src="imgs/termeksor.png" alt="Sör" />
-        </div>
-      </div>
-    </section>
-
-    <div class="container">
-      <div class="sidebar">
-        <div id="tapertek" onclick="tapertek()" class="menu-item active">
-          <span id="nyil1">▼</span>Tápérték adatok
-        </div>
-        <div id="kiszereles" onclick="kiszereles()" class="menu-item">
-          <span id="nyil2">▼</span>Elérhető kiszerelések
-        </div>
       </div>
 
-      <div id="content" class="content"></div>
+      <div class="story-dark">
+        <div class="story-row">
+          <div class="story-image">
+            <img src="imgs/szovjet.png" alt="A sörfőzde napjainkban" />
+          </div>
+          <div class="story-text">
+            <h3>A megszállás – 1945</h3>
+            <p>
+              A front átvonulása és a szovjet csapatok bevonulása után az üzem
+              élete újabb fordulatot vett. 1945-ben a hadsereg lefoglalta az
+              épületkomplexum egy részét. Hónapokon keresztül a sörfőzde
+              raktárai és melléképületei laktanyaként szolgáltak az itt
+              állomásozó katonák számára. Ebben az időszakban a termelés
+              szünetelt, az eredeti funkció csak a csapatok kivonulása után
+              állhatott vissza fokozatosan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-row">
+        <div class="story-image">
+          <img src="imgs/modern.png" alt="A sörfőzde napjainkban" />
+        </div>
+        <div class="story-text">
+          <h3>A jelen – 2026</h3>
+          <p>
+            A háború utáni évtizedekben a főzde sikeresen újraindult, és
+            átvészelte a későbbi politikai és gazdasági változásokat is. Bár a
+            technológiát az évek során modernizáltuk, a főzőház elrendezése és
+            az alapvető eljárások a régiek maradtak.
+          </p>
+        </div>
+      </div>
+
+      <div class="rolunk-altext-darkbg">
+        <h3 class="rolunk-altext">
+          Ma, 2026-ban, a centenáriumi évben büszkék vagyunk rá, hogy a Parti
+          Sörfőzde még mindig ugyanott, ugyanazt a minőséget képviseli, amit
+          nagyapánk 100 évvel ezelőtt megálmodott.
+        </h3>
+      </div>
     </div>
+  </section>
 
-    <section class="stats-container">
-      <div class="stats-wrapper">
-        <div class="stat-item">
-          <div class="badge-container">
-            <span class="badge">SZÁMOKBAN</span>
-          </div>
-          <div class="stat-number">800+</div>
-          <div class="stat-label">elégedett viszonteladó</div>
-        </div>
+  <footer class="footer">
+    <p>
+      © 2026 Parti Sörfőzde. Minden jog fenntartva. <span>|</span> Adatvédelmi irányelvek
+      <span>|</span> Felhasználási feltételek
+    </p>
+    <p>Kapcsolat Felvétel: <span>info@partisor.hu</span></p>
 
-        <div class="stat-item">
-          <div class="stat-number">20+</div>
-          <div class="stat-label">sörtermék</div>
-        </div>
+  </footer>
 
-        <div class="stat-item">
-          <div class="stat-number">186.000</div>
-          <div class="stat-label">főzött sör hl/év</div>
-        </div>
+  <script>
+    tapertek();
 
-        <div class="stat-item">
-          <div class="stat-number">4</div>
-          <div class="stat-label">Parti Sör Márkabolt</div>
-        </div>
-      </div>
-    </section>
-
-    <h1 id="rolunk" class="beer-title rolunk-text">Rólunk</h1>
-    <h3 class="rolunk-altext">
-      Családi vállalkozásunk idén ünnepli fennállásának 100. évfordulóját. A
-      sörfőzdét nagyapánk alapította, és jelenleg mi, az unokák vezetjük az
-      üzemet, tiszteletben tartva az eredeti receptúrákat és a hely történelmét.
-    </h3>
-    <section  class="story-section">
-      <div class="story-container">
-        <div class="story-dark">
-          <div class="story-row">
-            <div class="story-image">
-              <img src="imgs/nyito.png" alt="A sörfőzde kezdetei" />
-            </div>
-            <div class="story-text">
-              <h3>Az alapítás – 1926</h3>
-              <p>
-                A sörfőzde építését az 1920-as évek elején kezdték meg, a
-                hivatalos átadásra pedig 1926-ban került sor. Az üzemcsarnok
-                falán ma is látható az eredeti fotó a megnyitóról, ahol
-                nagyapánk és az alapító csapat átvágta a zöld szalagot,
-                elindítva ezzel a termelést. A "Parti Sörfőzde" név már ekkor
-                összeforrt a minőségi sörfőzéssel a környéken.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="story-row">
-          <div class="story-image">
-            <img src="imgs/bomba.png" alt="A technológiai fejlődés" />
-          </div>
-          <div class="story-text">
-            <h3>A háborús évek – 1944</h3>
-            <p>
-              A sörfőzde működése az első két évtizedben zavartalan volt,
-              azonban a második világháború eseményei közvetlenül érintették az
-              üzemet. 1944-ben, egy légitámadás során találat érte a főépületet.
-              Egy bomba átszakította a tetőszerkezetet, és a főzőház közepén,
-              közvetlenül az üstök mellett fúródott a földbe. Szerencsés
-              véletlen folytán a szerkezet nem robbant fel. A tűzszerészek
-              később hatástalanították és elszállították az eszközt, így a
-              berendezések épségben maradtak.
-            </p>
-          </div>
-        </div>
-
-        <div class="story-dark">
-          <div class="story-row">
-            <div class="story-image">
-              <img src="imgs/szovjet.png" alt="A sörfőzde napjainkban" />
-            </div>
-            <div class="story-text">
-              <h3>A megszállás – 1945</h3>
-              <p>
-                A front átvonulása és a szovjet csapatok bevonulása után az üzem
-                élete újabb fordulatot vett. 1945-ben a hadsereg lefoglalta az
-                épületkomplexum egy részét. Hónapokon keresztül a sörfőzde
-                raktárai és melléképületei laktanyaként szolgáltak az itt
-                állomásozó katonák számára. Ebben az időszakban a termelés
-                szünetelt, az eredeti funkció csak a csapatok kivonulása után
-                állhatott vissza fokozatosan.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="story-row">
-          <div class="story-image">
-            <img src="imgs/modern.png" alt="A sörfőzde napjainkban" />
-          </div>
-          <div class="story-text">
-            <h3>A jelen – 2026</h3>
-            <p>
-              A háború utáni évtizedekben a főzde sikeresen újraindult, és
-              átvészelte a későbbi politikai és gazdasági változásokat is. Bár a
-              technológiát az évek során modernizáltuk, a főzőház elrendezése és
-              az alapvető eljárások a régiek maradtak.
-            </p>
-          </div>
-        </div>
-       
-        <div class="rolunk-altext-darkbg">
-            <h3 class="rolunk-altext">
-            Ma, 2026-ban, a centenáriumi évben büszkék vagyunk rá, hogy a Parti
-            Sörfőzde még mindig ugyanott, ugyanazt a minőséget képviseli, amit
-            nagyapánk 100 évvel ezelőtt megálmodott.
-            </h3>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <p>
-        © 2026 Parti Sörfőzde. Minden jog fenntartva. <span>|</span> Adatvédelmi irányelvek
-        <span>|</span> Felhasználási feltételek
-      </p>
-      <p>Kapcsolat Felvétel: <span>info@partisor.hu</span></p>
-
-    </footer>
-
-    <script>
-      tapertek();
-
-      function kiszereles() {
-        const menuItems = ` <h3>Elérhető kiszerelések</h3>
+    function kiszereles() {
+      const menuItems = ` <h3>Elérhető kiszerelések</h3>
             <div class="packaging-grid">
                 <div>
                     <li class="packaging-item">0,5l üveg</li>
@@ -238,23 +230,23 @@
                 </div>
             </div>`;
 
-        document.getElementById("content").innerHTML = menuItems;
-        document.getElementById("kiszereles").style.backgroundColor = "#5c5c5c";
-        document.getElementById("kiszereles").style.borderRight = "0px";
+      document.getElementById("content").innerHTML = menuItems;
+      document.getElementById("kiszereles").style.backgroundColor = "#5c5c5c";
+      document.getElementById("kiszereles").style.borderRight = "0px";
 
-        document.getElementById("tapertek").style.backgroundColor = "#5c5c5c00";
-        document.getElementById("tapertek").style.borderRight =
-          "1px solid #ddd";
+      document.getElementById("tapertek").style.backgroundColor = "#5c5c5c00";
+      document.getElementById("tapertek").style.borderRight =
+        "1px solid #ddd";
 
-        document.getElementById("nyil2").style.transform = "rotate(-90deg)";
-        document.getElementById("nyil2").style.color = "#FBB117";
+      document.getElementById("nyil2").style.transform = "rotate(-90deg)";
+      document.getElementById("nyil2").style.color = "#FBB117";
 
-        document.getElementById("nyil1").style.color = "#ffffff";
-        document.getElementById("nyil1").style.transform = "rotate(0deg)";
-      }
+      document.getElementById("nyil1").style.color = "#ffffff";
+      document.getElementById("nyil1").style.transform = "rotate(0deg)";
+    }
 
-      function tapertek() {
-        const menuItems = `
+    function tapertek() {
+      const menuItems = `
         <h3>Tápérték 100 ml termékben</h3>
         <p class="">* Referencia beviteli érték egy átlagos felnőtt számára (8400 kJ/2000 kcal)</p>
         <table>
@@ -285,32 +277,33 @@
         </table>
     `;
 
-        document.getElementById("content").innerHTML = menuItems;
-        document.getElementById("tapertek").style.backgroundColor = "#5c5c5c";
-        document.getElementById("tapertek").style.borderRight = "0px";
+      document.getElementById("content").innerHTML = menuItems;
+      document.getElementById("tapertek").style.backgroundColor = "#5c5c5c";
+      document.getElementById("tapertek").style.borderRight = "0px";
 
-        document.getElementById("kiszereles").style.backgroundColor =
-          "#5c5c5c00";
-        document.getElementById("kiszereles").style.borderRight =
-          "1px solid #ddd";
+      document.getElementById("kiszereles").style.backgroundColor =
+        "#5c5c5c00";
+      document.getElementById("kiszereles").style.borderRight =
+        "1px solid #ddd";
 
-        document.getElementById("nyil1").style.transform = "rotate(-90deg)";
-        document.getElementById("nyil1").style.color = "#FBB117";
+      document.getElementById("nyil1").style.transform = "rotate(-90deg)";
+      document.getElementById("nyil1").style.color = "#FBB117";
 
-        document.getElementById("nyil2").style.color = "#ffffff";
-        document.getElementById("nyil2").style.transform = "rotate(0deg)";
+      document.getElementById("nyil2").style.color = "#ffffff";
+      document.getElementById("nyil2").style.transform = "rotate(0deg)";
+    }
+
+    (function () {
+      const btn = document.querySelector(".nav-toggle");
+      const nav = document.querySelector(".navbar");
+      if (btn && nav) {
+        btn.addEventListener("click", () => {
+          nav.classList.toggle("open");
+          btn.classList.toggle("open");
+        });
       }
+    })();
+  </script>
+</body>
 
-      (function () {
-        const btn = document.querySelector(".nav-toggle");
-        const nav = document.querySelector(".navbar");
-        if (btn && nav) {
-          btn.addEventListener("click", () => {
-            nav.classList.toggle("open");
-            btn.classList.toggle("open");
-          });
-        }
-      })();
-    </script>
-  </body>
 </html>
