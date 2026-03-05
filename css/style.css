@@ -48,6 +48,43 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+
+.video-background {
+  position: fixed; /* Rögzíti a videót, így görgetésnél is a háttérben marad */
+  top: 0;
+  left: 0;
+  width: 100vw; /* A képernyő szélességének 100%-a */
+  height: 100vh; /* A képernyő magasságának 100%-a */
+  object-fit: cover; /* Ez vágja le a széleket úgy, hogy a videó kitöltse a teret anélkül, hogy összenyomódna */
+  z-index: -1; /* Biztosítja, hogy minden más elem a videó elé kerüljön */
+  pointer-events: none; /* Teljesen "kattinthatatlanná" teszi, így semmilyen trükkel nem lehet megállítani */
+}
+
+/* Példa a tartalom formázására (hogy látszódjon a videó előtt) */
+.video-content {
+  position: relative;
+  z-index: 1; /* A videó rétege fölé helyezi */
+  color: white; /* Fehér betűszín, hogy elüssön a háttértől */
+  text-align: center;
+  font-family: sans-serif;
+  /* Árnyék, hogy világos videóknál is olvasható maradjon a szöveg */
+}
+.bg-color-set{
+  width: 100%;
+  height: fit-content;
+  background-color: #222;
+}
+
+
+.bg-color-set-alt{
+  width: 100%;
+  height: fit-content;
+  background-color: #222;
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+
+
 .title-box {
   width: 100%;
   height: 500px;
@@ -588,8 +625,9 @@ tr:last-child td {
   padding: 60px 20px;
   display: flex;
   justify-content: center;
-  background-color: #1b1b1b;
+  background-color: #22222200;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .stats-wrapper {
@@ -622,7 +660,7 @@ tr:last-child td {
 }
 
 .badge {
-  background-color: #fffcdf;
+  background-color: #ffffff;
   color: #fbb117;
   font-size: 0.75rem;
   font-weight: bold;
@@ -631,6 +669,7 @@ tr:last-child td {
   padding: 4px 12px;
   transform: skewX(-10deg);
   display: inline-block;
+  
 }
 
 .stat-number {
@@ -639,12 +678,14 @@ tr:last-child td {
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 10px;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
 }
 
 .stat-label {
   font-size: 0.95rem;
-  color: #555;
+  color: #ffffff;
   font-weight: 300;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
 }
 
 @media (max-width: 1024px) {
