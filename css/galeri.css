@@ -1,0 +1,41 @@
+/* 1. Alapbeállítások: Ez garantálja, hogy semmi ne lógjon ki a képernyőről */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* 2. A galéria rács (Grid) rendszere */
+.gallery {
+    display: grid;
+    /* Asztali nézet: automatikusan annyi oszlopot csinál, amennyi kényelmesen elfér (min. 250px szélesek) */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px; /* Távolság a képek között */
+    max-width: 1200px; /* A galéria maximális szélessége */
+    margin: 0 auto; /* Középre igazítja a galériát a képernyőn */
+}
+
+/* 3. A képek formázása asztali nézetben */
+.gallery img {
+    width: 100%; /* Kitölti a rács celláját széltében */
+    height: 250px; /* Egyforma magasságot ad minden képnek asztali gépen */
+    object-fit: cover; /* Levágja a kép szélét, ha nem jó az arány, de SOHA nem torzítja el! */
+    border-radius: 5px; /* Kicsit lekerekített sarkok a modern kinézetért */
+    display: block;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Enyhe árnyék */
+}
+
+/* 4. TELEFONOS NÉZET: Szigorúan egy oszlop! */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Pontosan 1 darab oszlop legyen */
+        gap: 20px; /* Kicsit nagyobb szünet a képek között telefonon */
+    }
+    
+    .gallery img {
+        height: auto; /* Telefonon mutassa meg a kép teljes magasságát levágás nélkül */
+        max-height: 500px; /* De ne legyen nevetségesen hatalmas sem */
+    }
+}
